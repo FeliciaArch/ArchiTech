@@ -39,6 +39,7 @@ import {
 import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
 import LandingPageHeader from "components/Headers/LandingPageHeader.js";
 import DemoFooter from "components/Footers/DemoFooter.js";
+import ThreeDMap from "components/Maps/3dMap.js";
 
 function LandingPage() {
   document.documentElement.classList.remove("nav-open");
@@ -51,6 +52,7 @@ function LandingPage() {
   return (
     <>
       <ExamplesNavbar />
+      <ThreeDMap />
       <LandingPageHeader />
       <div className="main">
         <div className="section text-center">

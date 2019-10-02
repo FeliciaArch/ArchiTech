@@ -46,6 +46,14 @@ function SectionExamples() {
               >
                 Landing Page
               </Button>
+              <Button
+                className="btn-outline-neutral btn-round"
+                color="default"
+                href="/tell-us-more"
+                target="_blank"
+              >
+                Get Started!
+              </Button>
             </Col>
             <Col className="text-center" md="6">
               <a href="examples/profile.html" target="_blank">

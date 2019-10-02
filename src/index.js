@@ -30,7 +30,10 @@ import NucleoIcons from "views/NucleoIcons.js";
 import LandingPage from "views/examples/LandingPage.js";
 import ProfilePage from "views/examples/ProfilePage.js";
 import RegisterPage from "views/examples/RegisterPage.js";
+import TypeForm from "components/TypeForm/TypeForm.js";
+
 // others
+
 
 ReactDOM.render(
   <BrowserRouter>
@@ -45,6 +48,10 @@ ReactDOM.render(
         render={props => <LandingPage {...props} />}
       />
       <Route
+        path="/tell-us-more"
+        render={props => <TypeForm {...props} />}
+      />
+      <Route
         path="/profile-page"
         render={props => <ProfilePage {...props} />}
       />
@@ -57,3 +64,4 @@ ReactDOM.render(
   </BrowserRouter>,
   document.getElementById("root")
 );
+
