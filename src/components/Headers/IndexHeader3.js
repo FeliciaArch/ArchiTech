@@ -28,7 +28,7 @@ import Switch from "react-bootstrap-switch";
 
 // core components
 
-export default class IndexHeader extends React.Component {
+export default class IndexHeader3 extends React.Component {
 constructor(props) {
         super(props);
         this.state = {
@@ -68,7 +68,6 @@ render() {
                                                                                                            <strong>Number of levels</strong>: 2 <br/>
                                                                                                             <strong>Building Height</strong>: 20'-0" <br/>
                                                                                                             <strong>Building Area</strong>: 2000 sqft <br/>
-                                                                                                            <strong>Total Addition</strong>: 0 sqft
 
                                                                                                             </h5>:
                                                           <h5 className="description text-left">
@@ -76,8 +75,7 @@ render() {
                                                            <strong>Lot Size</strong>: 2500 sqft <br/>
                                                                                                                                                                      <strong>Number of levels</strong>:  <strong  style={{color: '#51cbce'}}>3 </strong> <br/>
                                                                                                                                                                       <strong>Building Height</strong>:  <strong  style={{color: '#51cbce'}}>30'-0" </strong> <br/>
-                                                                                                                                                                      <strong>Building Area</strong>:  <strong  style={{color: '#51cbce'}}>3,960 sqft </strong> <br/>
-                                                                                                                                                                      <strong>Total Addition</strong>:  <strong  style={{color: '#51cbce'}}>1,960 sqft </strong>
+                                                                                                                                                                      <strong>Building Area</strong>:  <strong  style={{color: '#51cbce'}}>4,024 sqft </strong> <br/>
 
 
 
@@ -90,7 +88,7 @@ render() {
                                            <div id="switches" className="content-left">
                                                                                                         <label>
                                                                                                         <div>
-                                                                                                                                                { this.state.active ? <h5> <strong> Show additional space </strong> </h5>:
+                                                                                                                                                { this.state.active ? <h5> <strong> Show additional storey </strong> </h5>:
                                                                                                                                                  <h5> <strong> Show existing property </strong> </h5>
                                                                                                                                                  }
                                                                                                                                                </div>
@@ -112,26 +110,14 @@ render() {
 
                         <div>
                          { this.state.active ?  <h2 className="presentation-subtitle text-center">
-                                                                        No one likes living in a shoebox. See what else you can add to your home in just 1 click!
-                                                                      </h2>:
-                         <div> <h3 className="presentation-subtitle text-center">
-                                                  <strong> Congrats! You can add:
+                                                                        Renovations are a drag. Let’s build a new house instead!
 
-                                                           20 ft of additional front space </strong>
-                                                </h3><br/>
-                                                                    <Button
-                                                                                    className="btn-outline-neutral btn-round"
-                                                                                    color="default"
-                                                                                    href="/maps2"
-                                                                                    target="_blank"
-                                                                                  >
-                                                                                    Show me more?
-                                                                                  </Button>
-                                                                    </div>
+                                                                      </h2>:
+                          <h3 className="presentation-subtitle text-center">
+                                                  <strong> Your new maximum allowed space is: 4024 sqft </strong>
+                                                </h3>
                            }
                </div>
-
-
            </div>
 
 

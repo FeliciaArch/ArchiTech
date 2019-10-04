@@ -7863,7 +7863,7 @@ export default class ThreeDMap extends Component {
 //        {...this.state.viewport}
 //        onViewportChange={(viewport) => this.setState({viewport})}
 //      />
-<Iframe url="https://codesandbox.io/embed/sf-opendata-sktm9?fontsize=14"
+<Iframe url={this.props.url}
         width="450px"
         height="450px"
         id="myId"

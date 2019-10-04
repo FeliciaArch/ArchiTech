@@ -45,7 +45,7 @@ function LandingPageHeader() {
     <>
       <div
         style={{
-          backgroundImage: "url(" + require("assets/img/home.jpg") + ")"
+          backgroundImage: "url(" + require("assets/img/landingpage.jpg") + ")"
         }}
         className="page-header"
         data-parallax={true}
@@ -69,6 +69,12 @@ function LandingPageHeader() {
                   Get Started
                 </Button>
           </div>
+          <div
+                    className="moving-clouds"
+                    style={{
+                      backgroundImage: "url(" + require("assets/img/clouds.png") + ")"
+                    }}
+                  />
         </Container>
       </div>
     </>

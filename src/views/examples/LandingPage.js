@@ -39,7 +39,6 @@ import {
 import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
 import LandingPageHeader from "components/Headers/LandingPageHeader.js";
 import DemoFooter from "components/Footers/DemoFooter.js";
-import ThreeDMap from "components/Maps/3dMap.js";
 import ConnectedGraph from "components/ConnectedGraph.js";
 
 function LandingPage() {
@@ -53,7 +52,6 @@ function LandingPage() {
   return (
     <>
       <ExamplesNavbar />
-      <ThreeDMap />
       <LandingPageHeader />
       <ConnectedGraph />
 
@@ -62,13 +60,11 @@ function LandingPage() {
           <Container>
             <Row>
               <Col className="ml-auto mr-auto" md="8">
-                <h2 className="title">Let's talk product</h2>
+                <h2 className="title">About ArchiTech</h2>
                 <h5 className="description">
-                  This is the paragraph where you can write more details about
-                  your product. Keep you user engaged by providing meaningful
-                  information. Remember that by this time, the user is curious,
-                  otherwise he wouldn't scroll to get here. Add a button if you
-                  want the user to see more.
+                Home improvement projects can be complicated and expensive.
+                ArchiTech is a tool that efficiently streamlines the planning
+                process so you can plan your dream home for a fraction of the cost.
                 </h5>
                 <br />
                 <Button
@@ -87,30 +83,15 @@ function LandingPage() {
               <Col md="3">
                 <div className="info">
                   <div className="icon icon-info">
-                    <i className="nc-icon nc-album-2" />
-                  </div>
-                  <div className="description">
-                    <h4 className="info-title">Beautiful Gallery</h4>
-                    <p className="description">
-                      Spend your time generating new ideas. You don't have to
-                      think of implementing.
-                    </p>
-                    <Button className="btn-link" color="info" href="#pablo">
-                      See more
-                    </Button>
-                  </div>
-                </div>
-              </Col>
-              <Col md="3">
-                <div className="info">
-                  <div className="icon icon-info">
                     <i className="nc-icon nc-bulb-63" />
                   </div>
                   <div className="description">
-                    <h4 className="info-title">New Ideas</h4>
-                    <p>
-                      Larger, yet dramatically thinner. More powerful, but
-                      remarkably power efficient.
+                    <h4 className="info-title">Need</h4>
+                    <br/>
+                    <p className="description">
+                      A lot of burden falls on the homeowner when it comes to researching property information
+                      and regulations, getting design plans, and finding contractors to partner with. We're here
+                      to make things simple.
                     </p>
                     <Button className="btn-link" color="info" href="#pablo">
                       See more
@@ -121,13 +102,14 @@ function LandingPage() {
               <Col md="3">
                 <div className="info">
                   <div className="icon icon-info">
-                    <i className="nc-icon nc-chart-bar-32" />
+                    <i className="nc-icon nc-zoom-split" />
                   </div>
                   <div className="description">
-                    <h4 className="info-title">Statistics</h4>
+                    <h4 className="info-title">Scope</h4>
+                    <br/>
                     <p>
-                      Choose from a veriety of many colors resembling sugar
-                      paper pastels.
+A typical construction project consists of planning, design, permit, and construction phases.
+This product is designed for the planning: zoning analysis, cost estimate, projected timeline, and team building.
                     </p>
                     <Button className="btn-link" color="info" href="#pablo">
                       See more
@@ -138,13 +120,32 @@ function LandingPage() {
               <Col md="3">
                 <div className="info">
                   <div className="icon icon-info">
-                    <i className="nc-icon nc-sun-fog-29" />
+                    <i className="nc-icon nc-settings" />
                   </div>
                   <div className="description">
-                    <h4 className="info-title">Delightful design</h4>
+                    <h4 className="info-title">How it Works</h4>
+                    <br/>
                     <p>
-                      Find unique and handmade delightful designs related items
-                      directly from our sellers.
+By entering your address, we pull and curate data from public SF databases, calculate the maximum possible specifications of
+the property using a MapBox API, and display the 3D rendering as you move through the tool.
+                    </p>
+                    <Button className="btn-link" color="info" href="#pablo">
+                      See more
+                    </Button>
+                  </div>
+                </div>
+              </Col>
+              <Col md="3">
+                <div className="info">
+                  <div className="icon icon-info">
+                    <i className="nc-icon nc-satisfied" />
+                  </div>
+                  <div className="description">
+                    <h4 className="info-title">Outcomes</h4>
+                    <br/>
+                    <p>
+We'll give you property information, a cost estimate, permit instructions, and suggested contracting companies.
+You'll also see a 3D view of your property, with options to overlay additional rooms, or a new building that satisfies regulations.
                     </p>
                     <Button className="btn-link" color="info" href="#pablo">
                       See more
@@ -156,214 +157,10 @@ function LandingPage() {
           </Container>
         </div>
         <div className="section section-dark text-center">
-          <Container>
-            <h2 className="title">Let's talk about us</h2>
-            <Row>
-              <Col md="4">
-                <Card className="card-profile card-plain">
-                  <div className="card-avatar">
-                    <a href="#pablo" onClick={e => e.preventDefault()}>
-                      <img
-                        alt="..."
-                        src={require("assets/img/faces/clem-onojeghuo-3.jpg")}
-                      />
-                    </a>
-                  </div>
-                  <CardBody>
-                    <a href="#pablo" onClick={e => e.preventDefault()}>
-                      <div className="author">
-                        <CardTitle tag="h4">Henry Ford</CardTitle>
-                        <h6 className="card-category">Product Manager</h6>
-                      </div>
-                    </a>
-                    <p className="card-description text-center">
-                      Teamwork is so important that it is virtually impossible
-                      for you to reach the heights of your capabilities or make
-                      the money that you want without becoming very good at it.
-                    </p>
-                  </CardBody>
-                  <CardFooter className="text-center">
-                    <Button
-                      className="btn-just-icon btn-neutral"
-                      color="link"
-                      href="#pablo"
-                      onClick={e => e.preventDefault()}
-                    >
-                      <i className="fa fa-twitter" />
-                    </Button>
-                    <Button
-                      className="btn-just-icon btn-neutral ml-1"
-                      color="link"
-                      href="#pablo"
-                      onClick={e => e.preventDefault()}
-                    >
-                      <i className="fa fa-google-plus" />
-                    </Button>
-                    <Button
-                      className="btn-just-icon btn-neutral ml-1"
-                      color="link"
-                      href="#pablo"
-                      onClick={e => e.preventDefault()}
-                    >
-                      <i className="fa fa-linkedin" />
-                    </Button>
-                  </CardFooter>
-                </Card>
-              </Col>
-              <Col md="4">
-                <Card className="card-profile card-plain">
-                  <div className="card-avatar">
-                    <a href="#pablo" onClick={e => e.preventDefault()}>
-                      <img
-                        alt="..."
-                        src={require("assets/img/faces/joe-gardner-2.jpg")}
-                      />
-                    </a>
-                  </div>
-                  <CardBody>
-                    <a href="#pablo" onClick={e => e.preventDefault()}>
-                      <div className="author">
-                        <CardTitle tag="h4">Sophie West</CardTitle>
-                        <h6 className="card-category">Designer</h6>
-                      </div>
-                    </a>
-                    <p className="card-description text-center">
-                      A group becomes a team when each member is sure enough of
-                      himself and his contribution to praise the skill of the
-                      others. No one can whistle a symphony. It takes an
-                      orchestra to play it.
-                    </p>
-                  </CardBody>
-                  <CardFooter className="text-center">
-                    <Button
-                      className="btn-just-icon btn-neutral"
-                      color="link"
-                      href="#pablo"
-                      onClick={e => e.preventDefault()}
-                    >
-                      <i className="fa fa-twitter" />
-                    </Button>
-                    <Button
-                      className="btn-just-icon btn-neutral ml-1"
-                      color="link"
-                      href="#pablo"
-                      onClick={e => e.preventDefault()}
-                    >
-                      <i className="fa fa-google-plus" />
-                    </Button>
-                    <Button
-                      className="btn-just-icon btn-neutral ml-1"
-                      color="link"
-                      href="#pablo"
-                      onClick={e => e.preventDefault()}
-                    >
-                      <i className="fa fa-linkedin" />
-                    </Button>
-                  </CardFooter>
-                </Card>
-              </Col>
-              <Col md="4">
-                <Card className="card-profile card-plain">
-                  <div className="card-avatar">
-                    <a href="#pablo" onClick={e => e.preventDefault()}>
-                      <img
-                        alt="..."
-                        src={require("assets/img/faces/erik-lucatero-2.jpg")}
-                      />
-                    </a>
-                  </div>
-                  <CardBody>
-                    <a href="#pablo" onClick={e => e.preventDefault()}>
-                      <div className="author">
-                        <CardTitle tag="h4">Robert Orben</CardTitle>
-                        <h6 className="card-category">Developer</h6>
-                      </div>
-                    </a>
-                    <p className="card-description text-center">
-                      The strength of the team is each individual member. The
-                      strength of each member is the team. If you can laugh
-                      together, you can work together, silence isn’t golden,
-                      it’s deadly.
-                    </p>
-                  </CardBody>
-                  <CardFooter className="text-center">
-                    <Button
-                      className="btn-just-icon btn-neutral"
-                      color="link"
-                      href="#pablo"
-                      onClick={e => e.preventDefault()}
-                    >
-                      <i className="fa fa-twitter" />
-                    </Button>
-                    <Button
-                      className="btn-just-icon btn-neutral ml-1"
-                      color="link"
-                      href="#pablo"
-                      onClick={e => e.preventDefault()}
-                    >
-                      <i className="fa fa-google-plus" />
-                    </Button>
-                    <Button
-                      className="btn-just-icon btn-neutral ml-1"
-                      color="link"
-                      href="#pablo"
-                      onClick={e => e.preventDefault()}
-                    >
-                      <i className="fa fa-linkedin" />
-                    </Button>
-                  </CardFooter>
-                </Card>
-              </Col>
-            </Row>
-          </Container>
+
         </div>
         <div className="section landing-section">
-          <Container>
-            <Row>
-              <Col className="ml-auto mr-auto" md="8">
-                <h2 className="text-center">Keep in touch?</h2>
-                <Form className="contact-form">
-                  <Row>
-                    <Col md="6">
-                      <label>Name</label>
-                      <InputGroup>
-                        <InputGroupAddon addonType="prepend">
-                          <InputGroupText>
-                            <i className="nc-icon nc-single-02" />
-                          </InputGroupText>
-                        </InputGroupAddon>
-                        <Input placeholder="Name" type="text" />
-                      </InputGroup>
-                    </Col>
-                    <Col md="6">
-                      <label>Email</label>
-                      <InputGroup>
-                        <InputGroupAddon addonType="prepend">
-                          <InputGroupText>
-                            <i className="nc-icon nc-email-85" />
-                          </InputGroupText>
-                        </InputGroupAddon>
-                        <Input placeholder="Email" type="text" />
-                      </InputGroup>
-                    </Col>
-                  </Row>
-                  <label>Message</label>
-                  <Input
-                    placeholder="Tell us your thoughts and feelings..."
-                    type="textarea"
-                    rows="4"
-                  />
-                  <Row>
-                    <Col className="ml-auto mr-auto" md="4">
-                      <Button className="btn-fill" color="danger" size="lg">
-                        Send Message
-                      </Button>
-                    </Col>
-                  </Row>
-                </Form>
-              </Col>
-            </Row>
-          </Container>
+
         </div>
       </div>
       <DemoFooter />

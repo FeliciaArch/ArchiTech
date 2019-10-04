@@ -28,7 +28,7 @@ import TypeForm from "components/TypeForm/TypeForm"
 function test() {
   window.alert("HI")
 }
-function RegisterPage() {
+function FormPage() {
   document.documentElement.classList.remove("nav-open");
   React.useEffect(() => {
     document.body.classList.add("register-page");
@@ -42,7 +42,7 @@ function RegisterPage() {
       <div
         className="page-header"
         style={{
-          backgroundImage: "url(" + require("assets/img/login-image.jpg") + ")"
+          backgroundImage: "url(" + require("assets/img/landingpage.jpg") + ")"
         }}
       >
         <div className="filter" />
@@ -54,27 +54,15 @@ function RegisterPage() {
                 <TypeForm />
 
               </Card>
-              <Button block
-                              className="btn-outline-neutral btn-round"
-                              color="default"
-                              href="/tell-us-more"
-                                            onClick={() => test()}
-                            >
-                              What can I build?
-                            </Button>
+
             </Col>
           </Row>
         </Container>
-        <div className="footer register-footer text-center">
-          <h6>
-            © {new Date().getFullYear()}, made with{" "}
-            <i class="fa fa-heart heart"></i> by the Archi-Techs
 
-          </h6>
-        </div>
       </div>
+
     </>
   );
 }
 
-export default RegisterPage;
+export default FormPage;

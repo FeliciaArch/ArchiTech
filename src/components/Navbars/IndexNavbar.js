@@ -71,7 +71,7 @@ function IndexNavbar() {
             target="_blank"
             title="Coded by Creative Tim"
           >
-            Paper Kit React
+            ArchiTech
           </NavbarBrand>
           <button
             aria-expanded={navbarCollapse}
@@ -140,7 +140,7 @@ function IndexNavbar() {
                 href="https://demos.creative-tim.com/paper-kit-react/#/documentation?ref=pkr-index-navbar"
                 target="_blank"
               >
-                <i className="nc-icon nc-book-bookmark" /> Documentation
+                <i className="nc-icon nc-book-bookmark" /> Budget Estimates
               </NavLink>
             </NavItem>
             <NavItem>

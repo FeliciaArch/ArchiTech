@@ -28,7 +28,7 @@ import Switch from "react-bootstrap-switch";
 
 // core components
 
-export default class IndexHeader extends React.Component {
+export default class IndexHeader2 extends React.Component {
 constructor(props) {
         super(props);
         this.state = {
@@ -90,7 +90,7 @@ render() {
                                            <div id="switches" className="content-left">
                                                                                                         <label>
                                                                                                         <div>
-                                                                                                                                                { this.state.active ? <h5> <strong> Show additional space </strong> </h5>:
+                                                                                                                                                { this.state.active ? <h5> <strong> Show additional storey </strong> </h5>:
                                                                                                                                                  <h5> <strong> Show existing property </strong> </h5>
                                                                                                                                                  }
                                                                                                                                                </div>
@@ -112,26 +112,24 @@ render() {
 
                         <div>
                          { this.state.active ?  <h2 className="presentation-subtitle text-center">
-                                                                        No one likes living in a shoebox. See what else you can add to your home in just 1 click!
+                                                                        Start your home’s next chapter - add a storey!
                                                                       </h2>:
-                         <div> <h3 className="presentation-subtitle text-center">
+                          <div><h3 className="presentation-subtitle text-center">
                                                   <strong> Congrats! You can add:
-
-                                                           20 ft of additional front space </strong>
+                                                           1 additional storey </strong>
                                                 </h3><br/>
-                                                                    <Button
-                                                                                    className="btn-outline-neutral btn-round"
-                                                                                    color="default"
-                                                                                    href="/maps2"
-                                                                                    target="_blank"
-                                                                                  >
-                                                                                    Show me more?
-                                                                                  </Button>
-                                                                    </div>
+                                                                                                                         <Button
+                                                                                                                                         className="btn-outline-neutral btn-round"
+                                                                                                                                         color="default"
+                                                                                                                                         href="/maps3"
+                                                                                                                                         target="_blank"
+                                                                                                                                       >
+                                                                                                                                         Tired of Renovations?
+                                                                                                                                       </Button>
+
+                                                                                                                             </div>
                            }
                </div>
-
-
            </div>
 
 

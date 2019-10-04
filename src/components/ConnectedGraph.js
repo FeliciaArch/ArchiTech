@@ -5,14 +5,14 @@ import {ToastsContainer, ToastsContainerPosition, ToastsStore} from 'react-toast
 
 // graph payload (with minimalist structure)
 const data = {
-    nodes: [{ id: "Start Address" }, { id: "Project Plan" }, { id: "Zoning Analysis" }, { id: "Permits" }, { id: "Cost Estimates" }, { id: "Project Teams" }],
+    nodes: [{ id: "Start Address" }, { id: "Project Plan" }, { id: "Zoning Analysis" }, { id: "Permits" }, { id: "Cost Estimates" }, { id: "CMA" }],
     links: [{ source: "Start Address", target: "Zoning Analysis" },
             { source: "Zoning Analysis", target: "Permits" },
             { source: "Zoning Analysis", target: "Cost Estimates" },
-            { source: "Zoning Analysis", target: "Project Teams" },
-            { source: "Project Teams", target: "Cost Estimates" },
-            { source: "Project Teams", target: "Permits" },
-            { source: "Project Teams", target: "Project Plan" },
+            { source: "Zoning Analysis", target: "CMA" },
+            { source: "CMA", target: "Cost Estimates" },
+            { source: "CMA", target: "Permits" },
+            { source: "CMA", target: "Project Plan" },
             { source: "Cost Estimates", target: "Permits" }]
 };
 
@@ -41,13 +41,13 @@ const myConfig = {
             "linkStrength": 1
           },
         node: {
-            highlightStrokeColor: "#fc5c7d",
+            highlightStrokeColor: "#F3FFC4",
             labelProperty: n => (n.type == 'app' ? `APP: ${n.id}` : `${n.id}`),
             color: "white",
                     fontColor: "white",
                     fontSize: 20,
                     fontWeight: "normal",
-                    highlightColor: "green",
+                    highlightColor: "#51BCDA",
                     highlightFontSize: 14,
                     highlightFontWeight: "bold",
                     highlightStrokeWidth: 1.5,
@@ -62,7 +62,7 @@ const myConfig = {
                     viewGenerator: null,
         },
         link: {
-            highlightColor: "#fc5c7d",
+            highlightColor: "#F3FFC4",
             mouseCursor: "cursor",
                     opacity: 1,
                     semanticStrokeWidth: true,
