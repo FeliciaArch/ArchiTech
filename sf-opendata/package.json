@@ -1,0 +1,21 @@
+{
+  "name": "sf-opendata",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html"
+  },
+  "dependencies": {
+    "dns": "0.2.2",
+    "fetch": "1.1.0",
+    "mapbox-gl": "1.3.1",
+    "react-d3-graph": "^2.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.2.0",
+    "parcel-bundler": "^1.6.1"
+  },
+  "keywords": []
+}

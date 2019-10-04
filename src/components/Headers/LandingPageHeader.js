@@ -20,6 +20,7 @@ import React from "react";
 
 // reactstrap components
 import { Button, Container } from "reactstrap";
+import ConnectedGraph from "components/ConnectedGraph.js";
 
 // core components
 
@@ -44,7 +45,7 @@ function LandingPageHeader() {
     <>
       <div
         style={{
-          backgroundImage: "url(" + require("assets/img/daniel-olahh.jpg") + ")"
+          backgroundImage: "url(" + require("assets/img/home.jpg") + ")"
         }}
         className="page-header"
         data-parallax={true}
@@ -53,22 +54,20 @@ function LandingPageHeader() {
         <div className="filter" />
         <Container>
           <div className="motto text-center">
-            <h1>Example page</h1>
-            <h3>Start designing your landing page here.</h3>
+            <h1 class="font-weight-normal">ArchiTech</h1>
+            <h3 class="font-weight-bold">You know that bathroom you wanted to add? Well, You can't.</h3>
+            <h4 class="font-weight-normal">Let's find out why...</h4>
             <br />
+            <ConnectedGraph />
             <Button
-              href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-              className="btn-round mr-1"
-              color="neutral"
-              target="_blank"
-              outline
-            >
-              <i className="fa fa-play" />
-              Watch video
-            </Button>
-            <Button className="btn-round" color="neutral" type="button" outline>
-              Download
-            </Button>
+                  className="btn-round mr-1"
+                  color="neutral"
+                  type="button"
+                  href="/tell-us-more"
+
+                >
+                  Get Started
+                </Button>
           </div>
         </Container>
       </div>

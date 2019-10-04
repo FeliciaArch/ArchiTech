@@ -99,7 +99,8 @@ function RegisterPage() {
         <div className="footer register-footer text-center">
           <h6>
             © {new Date().getFullYear()}, made with{" "}
-            <i className="fa fa-heart heart" /> by Creative Tim
+           Powered with <i class="fa fa-heart heart"></i> by the Archi-Techs
+
           </h6>
         </div>
       </div>

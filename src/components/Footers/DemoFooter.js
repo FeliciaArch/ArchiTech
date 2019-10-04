@@ -58,7 +58,8 @@ function DemoFooter() {
           <div className="credits ml-auto">
             <span className="copyright">
               © {new Date().getFullYear()}, made with{" "}
-              <i className="fa fa-heart heart" /> by Creative Tim
+                            Powered with <i class="fa fa-heart heart"></i> by the Archi-Techs
+
             </span>
           </div>
         </Row>
